@@ -1,0 +1,114 @@
+*{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f6f9;
+      padding:30px;
+    }
+
+    .container{
+      max-width:1000px;
+      margin:auto;
+    }
+
+    h1{
+      text-align:center;
+      margin-bottom:25px;
+      color:#333;
+    }
+
+    .top-section{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:20px;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:12px;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    .card h2{
+      margin-bottom:15px;
+      color:#444;
+    }
+
+    form input,
+    form select,
+    form button{
+      width:100%;
+      padding:12px;
+      margin-bottom:12px;
+      border-radius:8px;
+      border:1px solid #ccc;
+      font-size:16px;
+    }
+
+    form button{
+      background:#4CAF50;
+      color:white;
+      border:none;
+      cursor:pointer;
+      transition:0.3s;
+    }
+
+    form button:hover{
+      background:#45a049;
+    }
+
+    .expense-list{
+      margin-top:25px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      background:white;
+      border-radius:10px;
+      overflow:hidden;
+      box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    }
+
+    table th,
+    table td{
+      padding:14px;
+      text-align:center;
+      border-bottom:1px solid #eee;
+    }
+
+    table th{
+      background:#4CAF50;
+      color:white;
+    }
+
+    .delete-btn{
+      background:red;
+      color:white;
+      border:none;
+      padding:8px 12px;
+      border-radius:6px;
+      cursor:pointer;
+    }
+
+    .total-box{
+      margin-top:20px;
+      background:#222;
+      color:white;
+      padding:15px;
+      border-radius:10px;
+      text-align:center;
+      font-size:20px;
+      font-weight:bold;
+    }
+
+    @media(max-width:768px){
+      .top-section{
+        grid-template-columns:1fr;
+      }
+    }
